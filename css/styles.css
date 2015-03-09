@@ -1,0 +1,66 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+	color: #392547;
+}
+
+h1, h2, p{
+	margin: 20px;
+}
+
+img{
+	width: 13%;
+	height: 183px;
+	margin: 20px 1%;
+}
+
+p{
+	font-size: 1.3rem;
+}
+
+span, p{
+	color: #355040;
+}
+
+
+
+.ejemplo-a, .ejemplo-b, .ejemplo-c{
+	padding: 40px 0 100px 0;
+}
+
+.ejemplo-a{
+	background: #DDE1B7;
+}
+
+.ejemplo-b{
+	background: #9AC9CC;
+}
+
+.ejemplo-c{
+	background: #F9D8D9;
+}
+
+/* --- Ejemplo 1 --- */
+/* --- Selector elemento[atributo^="valor"] Todas las imágenes de la carpeta pictures tienen borde azul ---*/
+
+.ejemplo-a img[src^="pictures"]{
+	border: 5px solid #127EF8;
+	border-radius: 3px;
+}
+
+/* --- Ejemplo 2 --- */
+/* --- Selector elemento[atributo$="valor"] Todas las imágenes que sean .png tienen borde rojo ---*/
+
+.ejemplo-b img[src$=".png"]{
+	border: 5px solid #F74634;
+	border-radius: 3px;
+}
+
+/* --- Ejemplo 3 --- */
+/* --- Selector elemento[atributo$="valor"] Todas las imágenes que sean de perros tienen borde verde ---*/
+
+.ejemplo-c img[src*="perro"]{
+	border: 5px solid #13B72E;
+	border-radius: 3px;
+}
